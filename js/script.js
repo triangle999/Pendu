@@ -28,17 +28,31 @@ let winnerLoser = document.getElementById('winnerLoser')
 
 let audio = new Audio ('img/pendu.mp3')
 
-function afficherLettre(lettre) {
-    clavier.innerText += lettre 
-}
+// function afficherLettre(lettre) {
+  
+//     clavier.innerText += lettre 
+// }
 
 function afficherHint(hint) {
     document.getElementById(`hint`).innerText = `Maintenant tu te débrouille avec ça : ${hint}`
 }
 
 for (let i = 0; i < word.length; i++) {
-    clavier.innerHTML += '<button class="rounded guessbutton"></button>'
+    clavier.innerHTML += 
+`<div><button id="letter-${i}" class="rounded guessbutton"></button></div>`
     
+}
+
+function chercher(letter) {
+    console.log(letter)
+    for (let i = 0; i < word.length; i++) {
+    if (word[i] == letter) {
+        resultat = document.getElementById(`letter-${i}`). innerText = letter
+    } else if (word[i] != letter) {
+        document.getElementById('life').style.visibility = 'hidden'
+    }
+    
+}
 }
 
 // for (let lifej = -; lifej < ; lifej--){
@@ -50,7 +64,6 @@ function game() {
     audio.play()
     
     if (clavier.innerText != word) {
-        winnerLoser.src = 'img/loser.gif'
         document.getElementById('life').style.visibility = 'hidden'
         randomWord
         console.log(clavier.innerText + word)
