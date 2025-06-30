@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col-12 d-flex my-3">
+                <div>
+                    <img class="img-fluid" id="life" src="img/life.gif" alt="vie">
+                </div>
+                <div>
+                    <img class="img-fluid" id="life" src="img/life.gif" alt="vie">
+                </div>
+                <div>
+                    <img class="img-fluid" id="life" src="img/life.gif" alt="vie">
+                </div>
+                <div>
+                    <img class="img-fluid" id="life" src="img/life.gif" alt="vie">
+                </div>
+                <div>
+                    <img class="img-fluid" id="life" src="img/life.gif" alt="vie">
+                </div>
+                <div>
+                    <img class="img-fluid" id="life" src="img/life.gif" alt="vie">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="screen">
+            <div class="mb-2 text-center justify-content-evenly" id="hint">
+                <div>
+                    <h1>Tu veux un indice ?</h1>
+                </div>
+                <div>
+                    <img src="img/indice.gif" class="img-fluid" alt="gif-indice" onclick="afficherHint(hint)">
+                </div>
+            </div>
+            <div id="screenclavier" class="text-center mb-5">
+                
+            </div>
+        </div>
+            <div class="row justify-content-center mt-1 gap-2">
+            <div class="col-12 text-center">
+                <button class="rounded" onclick="afficherLettre(`A`)">A</button>
+                <button class="rounded" onclick="afficherLettre(`Z`)">Z</button>
+                <button class="rounded" onclick="afficherLettre(`E`)">E</button>
+                <button class="rounded" onclick="afficherLettre(`R`)">R</button>
+                <button class="rounded" onclick="afficherLettre(`T`)">T</button>
+                <button class="rounded" onclick="afficherLettre(`Y`)">Y</button>
+                <button class="rounded" onclick="afficherLettre(`U`)">U</button>
+                <button class="rounded" onclick="afficherLettre(`I`)">I</button>
+                <button class="rounded" onclick="afficherLettre(`O`)">O</button>
+                <button class="rounded" onclick="afficherLettre(`P`)">P</button>
+            </div>
+            <div class="col-12 text-center">
+                <button class="rounded" onclick="afficherLettre(`Q`)">Q</button>
+                <button class="rounded" onclick="afficherLettre(`S`)">S</button>
+                <button class="rounded" onclick="afficherLettre(`D`)">D</button>
+                <button class="rounded" onclick="afficherLettre(`F`)">F</button>
+                <button class="rounded" onclick="afficherLettre(`G`)">G</button>
+                <button class="rounded" onclick="afficherLettre(`H`)">H</button>
+                <button class="rounded" onclick="afficherLettre(`J`)">J</button>
+                <button class="rounded" onclick="afficherLettre(`K`)">K</button>
+                <button class="rounded" onclick="afficherLettre(`L`)">L</button>
+                <button class="rounded" onclick="afficherLettre(`M`)">M</button>
+            </div>
+            <div class="col-12 text-center">
+                <button class="rounded" onclick="afficherLettre(`W`)">W</button>
+                <button class="rounded" onclick="afficherLettre(`X`)">X</button>
+                <button class="rounded" onclick="afficherLettre(`C`)">C</button>
+                <button class="rounded" onclick="afficherLettre(`V`)">V</button>
+                <button class="rounded" onclick="afficherLettre(`B`)">B</button>
+                <button class="rounded" onclick="afficherLettre(`N`)">N</button>
+            </div>
+            <div class="col-12 text-center mt-5">
+                <div class="btn btn-warning mb-2" onclick="game()">
+                    PLAY
+                </div>
+                <div class="btn btn-warning mb-2" onclick="again()">
+                    AGAIN
+                </div>
+                <div>
+                    <img src="" class="img-fluid" id="winnerLoser" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</html>
